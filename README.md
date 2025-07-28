@@ -93,15 +93,16 @@ This process was completed using APIs of CityBike and Foursquare.
 - Final cleaned dataset includes **176 Bike Stations** with confirmed nearby locations under this threshold.
 
 ### Visual Observations
-- Pairplots showed **no clear visual relationship** between business categories, average popularity/ratings, and the availability of bikes or slots.
-- This held true both **before and after bias correction**, suggesting a weak influence of surrounding amenities on bike availability.
+- Pairplots showed **no clear visual relationship** between business categories, average popularity or average ratings, and the availability of Free Bikes or Total Bike Slots.
+- This held true both **before and after bias correction**, suggesting a weak influence of surrounding locations on bike availability.
     - Cleaned Dataframe Scatterplot Visualisations
         - ![Scatterplot of Free Bikes Vs Ratings](images/Free_Bkes_Ratings_Vis.png)
         - ![Scatterplot of Free Bikes Vs Categories](images/Free_Bikes_Cates_Vis.png)
         - ![Pairplot of Bike Stations](images/Pairplot_Vis.png)
 
 ### OLS Regression Model Findings
-- Pearson R correlation and VIF analyses confirmed low multicollinearity but little predictive strength.
+- Pearson R correlation and VIF analyses confirmed `low multicollinearity for business categories`, with a proposed threshold of 5. However, little predictive strength in further analysis.
+    - VIF analysis did find `high multicollinearity among ratings and popularity`. These variables removed from Multivariate Regression Analysis. 
 - Weak linear relationships were observed between top indepedent variables and dependent variables
     - Top Independent Variables
         - `bar_count`, `cafe_counts`
