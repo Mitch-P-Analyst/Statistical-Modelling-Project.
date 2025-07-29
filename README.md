@@ -158,22 +158,17 @@ This process was completed using APIs of CityBike and Foursquare.
        
 
 
-
-
-
-
-
 ## Challenges 
-- Selection Bias in FOURSQUARE API Reponses
+- Selection Bias in FOURSQUARE API Reponses.
     - Restricted responses from FOURSQUARE API required a limitation of 50 locations for BikeStation Coordiantes.
     - Restricted data available to assess full population of locations surrounding BikeStation, requiring cleaning and reduction of location distance threshold.
 
-- Low Predictive Strength of Independent Variables
-    - Low/Weak linear relationships from all geospatially available data with our CityBike Stations depevent variables
-    - Resulting conclusions identigy low model effectiveness and future goals to idenify alternative independent variables
+- Low Predictive Strength of Independent Variables.
+    - Low/Weak linear relationships from all geospatially available data with our CityBike Stations dependent variables.
+    - Resulting conclusions are low model effectiveness and future goals to identify alternative independent variables.
 
 - Multicollinearity
-    - Strong multicollinearity present among top linear correlated variables, 'Average Rating' and 'Average Popularity'. 
+    - Strong multicollinearity present among top linear correlated variables, `Average Rating` and `Average Popularity`. 
     - Seperation of multicollinearity variables was required to meet assumptions for accurate model predictions.
 
 
