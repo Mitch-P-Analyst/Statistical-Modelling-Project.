@@ -152,7 +152,10 @@ This process was completed using APIs of CityBike and Foursquare.
             - `Plot residuals vs fitted values`
             - `Generate Q-Q plot of residuals`
             - `Add a line of best fit to scatterplots using sns.regplot()`
+        - T-Tests to identify acquired sample data of locations as a reflection of true populations.
+            - As a result of restreicted FOURSQUARE API Response limits.
         - However, given poor predictor variables, significance of sucessful Statistical Testing minimal due to infered results
+       
 
 
 
@@ -161,7 +164,17 @@ This process was completed using APIs of CityBike and Foursquare.
 
 
 ## Challenges 
-(discuss challenges you faced in the project)
+- Selection Bias in FOURSQUARE API Reponses
+    - Restricted responses from FOURSQUARE API required a limitation of 50 locations for BikeStation Coordiantes.
+    - Restricted data available to assess full population of locations surrounding BikeStation, requiring cleaning and reduction of location distance threshold.
+
+- Low Predictive Strength of Independent Variables
+    - Low/Weak linear relationships from all geospatially available data with our CityBike Stations depevent variables
+    - Resulting conclusions identigy low model effectiveness and future goals to idenify alternative independent variables
+
+- Multicollinearity
+    - Strong multicollinearity present among top linear correlated variables, 'Average Rating' and 'Average Popularity'. 
+    - Seperation of multicollinearity variables was required to meet assumptions for accurate model predictions.
 
 
 
